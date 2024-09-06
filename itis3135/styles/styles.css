@@ -24,11 +24,10 @@ footer{
 }
 
 nav {
-    background-color: rgba(127,127,127,20);
-    border-width: 1px;
+    border-width: 2px;
     border-radius: 5px;
     border-style: solid;
-    height: 50px;
+    height: 30px;
 }
   
 nav > ul {
@@ -61,6 +60,25 @@ li{
 img {
     width: 400px;
     border-radius: 5%;
+}
+
+main a{
+    padding: 10px 10px 10px 10px;
+    border-color: orange;
+    background-color: grey;
+    border-width: 2px;
+    border-radius: 5px;
+    border-style: solid;
+}
+
+.left-align-img{
+    float: left;
+    width: 450px;
+    padding-right: 20px;
+}
+
+.left-align{
+    text-align: left;
 }
 
 .caption {
