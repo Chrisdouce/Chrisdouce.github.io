@@ -18,7 +18,7 @@ header, main {
 }
 
 footer{
-    background-color: grey;
+    background-color: #474747;
     margin-top: auto;
     text-align: center;
 }
@@ -64,11 +64,15 @@ img {
 
 main a{
     padding: 10px 10px 10px 10px;
-    border-color: orange;
-    background-color: grey;
+    border-color: #F0803C;
+    background-color: #474747;
     border-width: 2px;
     border-radius: 5px;
     border-style: solid;
+}
+
+.caption{
+    color:#138A36;
 }
 
 .left-align-img{
@@ -81,18 +85,14 @@ main a{
     text-align: left;
 }
 
-.caption {
-    color: rgba(0,150,0,127);
-}
-
 a:active {
-    color:orange;
+    color:#138A36;
 }
 
 a:visited {
-    color:blue;
+    color:#138A36;
 }
 
 a:hover {
-    color:rgb(255, 0, 0)
+    color:#70C1B3;
 }
