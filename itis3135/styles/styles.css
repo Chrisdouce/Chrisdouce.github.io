@@ -73,6 +73,10 @@ main a{
     color:#138A36;
 }
 
+.line{
+    
+}
+
 .left-align-img{
     float: left;
     padding: 20px;
@@ -83,7 +87,7 @@ main a{
 }
 
 a:active {
-    color:#138A36;
+    color:#18d150;
 }
 
 a:visited {
