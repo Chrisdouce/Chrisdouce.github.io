@@ -69,6 +69,10 @@ main a{
     border-style: solid;
 }
 
+a:any-link{
+    color:#138A36;
+}
+
 a:active {
     color:#18d150;
 }
