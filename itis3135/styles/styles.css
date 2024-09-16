@@ -69,12 +69,16 @@ main a{
     border-style: solid;
 }
 
-a:any-link{
-    color:#138A36;
+footer a:any-link{
+    color:orange;
 }
 
-a:active {
-    color:#18d150;
+footer a:hover {
+    color:#70C1B3;
+}
+
+a:any-link{
+    color:#138A36;
 }
 
 a:visited {
