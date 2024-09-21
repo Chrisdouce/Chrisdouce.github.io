@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,24 +7,78 @@
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
     <style>
         /*colors: crimson: #D62839 light blue: #00FFC5 blue: #175676 purple: #A755C2 green: #157F1F*/
+        body {
+            background-color: #cacaca;
+            background-image: url("../../itis3135/images/ocean.jpg");
+            box-sizing: border-box;
+            color: #00FFC5;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            font-family: 'Tahoma', Geneva, Verdana, sans-serif;
+            font-size: 1.2em;
+            margin: 0;
+            padding: 0;
+        }
+
+        header, footer, main{
+            margin: 0 auto;
+            background-color: #4a4a4a;
+            max-width: 900px;
+            width: 95%;
+        }
+
+        h1{
+            font-size: 1.5em;
+            text-align: center;
+            
+        }
+
+        h2, h3{
+            text-align: center;
+        }
+
+        header img{
+            width: 50px;
+            height: 50px;
+        }
+
+        hr{
+            border: none;
+            height: 3px;
+            background-color:#00FFC5;
+        }
+        
+        footer{
+            margin-top: auto;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Hi</h1>
+        <h1><img src="../../itis3135/images/cdlogo.png" alt="logo"> CDevDesigns</h1>
     </header>
     <main>
-        <h2>Template Page</h2>
-        <img src="./itis3135/images/plink-wide-cat.gif" alt="funny cat gif">
-        <br><br>
+        <h2>CDevDesigns's Services</h2>
+        <p>CDevDesigns is a service where we provide mediocre quality web services for an absurd price of "free". We are sure you will be underwhelmed by how basic our services are, but when you look into your pocket, you'll find it as deep as you left here.</p>
         <hr>
-        <h4>This is a template</h4>
-        <br><br>
+        <h3>Amazing things our company has scrapped together</h3>
+        <ul>
+            <li>We've helped a total of <strong>1</strong> person(s)</li>
+            <li>Green is our favorite color</li>
+            <li>We are in the red</li>
+            <li>We have a pet cat in the office</li>
+            <li>We are located in the United States</li>
+            <li>We made this home page website</li>
+            <li>We also made this text</li>
+        </ul>
         <hr>
+        <p></p>
     </main>
     <footer>
-        <div data-include="components/footer.html"></div>
+        
+        <p>Call us at 555-444-2333 | Email us at email@email.com</p>
     </footer>
-    <script src="scripts/include.js"></script>
 </body>
 </html>
