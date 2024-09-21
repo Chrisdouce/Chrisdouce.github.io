@@ -17,6 +17,11 @@ header, main {
     text-align: center;
 }
 
+main img{
+    width: 300px;
+    height: 200px;
+}
+
 footer{
     background-color: #474747;
     margin-top: auto;
