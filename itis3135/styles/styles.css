@@ -1,4 +1,10 @@
-body {
+:root{
+    --text: orange;
+    --background: black;
+    --links: #138A36;
+}
+
+body{
     background-color: black;
     color: orange;
     display: flex;
@@ -7,13 +13,13 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-header, main, footer {
+header, main, footer{
     width: 95%;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-header, main {
+header, main a{
     text-align: center;
 }
 
@@ -23,19 +29,18 @@ main img{
 }
 
 footer{
-    background-color: #474747;
     margin-top: auto;
     text-align: center;
 }
 
-nav {
+nav{
     border-width: 2px;
     border-radius: 5px;
     border-style: solid;
     height: 30px;
 }
   
-nav > ul {
+nav > ul{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -62,9 +67,13 @@ li{
     padding-right: 10px;
 }
 
-img {
+img{
     width: 400px;
     border-radius: 5%;
+}
+
+a{
+    text-decoration: none;
 }
 
 main a{
@@ -74,19 +83,11 @@ main a{
     border-style: solid;
 }
 
-footer a:any-link{
-    color:orange;
-}
-
-footer a:hover {
-    color:#70C1B3;
-}
-
 a:any-link{
     color:#138A36;
 }
 
-a:visited {
+a:visited{
     color:#138A36;
 }
 
@@ -94,6 +95,7 @@ a:link{
     color: #138A36;
 }
 
-a:hover {
+a:hover{
+    text-decoration: underline;
     color:#70C1B3;
 }

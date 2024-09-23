@@ -3,26 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>footer</title>
+    <title>Footer</title>
 </head>
 <body>
+    <footer>
     <nav>
         <ul>
-            <li><a href="https://github.com/Chrisdouce" target="_new">Github profile</a></li>
+            <li><a href="https://github.com/Chrisdouce" target="_new">Github</a></li>
             <li>|</li>
-            <li><a href="https://webpages.charlotte.edu/cdoucett" target="_new">UNCC Website</a></li>
+            <li><a href="https://webpages.charlotte.edu/cdoucett" target="_new">UNCC Web</a></li>
             <li>|</li>
-            <li><a href="https://chrisdouce.github.io/" target="_new">GitHub.io Website</a></li>
+            <li><a href="https://chrisdouce.github.io/" target="_new">GitHub.io</a></li>
             <li>|</li>
-            <li><a href="../itis3135/">ITIS3135 Site</a></li>
+            <li><a href="../itis3135/">ITIS 3135 Site</a></li>
             <li>|</li>
             <li><a href="https://www.linkedin.com/in/christopher-doucette-7596a7222/" target="_new"> LinkedIn</a></li>
         </ul>
     </nav>
     <p>
-        Website made by
-        <a id="dynamic" href="#">CDevDesigns &copy; 2024</a>
-        <script>
+        Website made by <a id="dynamic" href="#">CDevDesigns &copy;2024</a>, <em>Certified in <a href="https://www.freecodecamp.org/certification/cdoucett/responsive-web-design" target="_new">Responsive Web Design</a></em>.
+    </p>
+    <a id="validation-button-html"><img id="validation-button-img-html" src="./itis3135/images/htmlValidationButton.png" style="width: 100px;" alt="html validation button"></a>
+    <a id="validation-button-css"><img id="validation-button-img-css" src="./itis3135/images/cssValidationButton.png" style="width: 100px;" alt="css validation button"></a>
+    <script>
         let link = document.getElementById('dynamic');
         let currentPath = window.location.pathname;
         
@@ -32,12 +35,6 @@
         } else {
             link.href = './itis3135/cdevdesigns.co';
         }
-        </script>,
-        <em> Certified in <a href="https://www.freecodecamp.org/certification/cdoucett/responsive-web-design" target="_new">Responsive Web Design</a></em>.
-    </p>
-    <a id="validation-button-html"><img id="validation-button-img-html" src="./itis3135/images/htmlValidationButton.png" style="width: 100px;" alt="html validation button"></a>
-    <a id="validation-button-css"><img id="validation-button-img-css" src="./itis3135/images/cssValidationButton.png" style="width: 100px;" alt="css validation button"></a>
-    <script>
         document.getElementById("validation-button-html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
         document.getElementById("validation-button-css").setAttribute("href","https://jigaw.w3.org/css-validator/validator?uri=" + location.href);
         
@@ -51,5 +48,7 @@
         document.getElementById("validation-button-img-html").setAttribute("src", path + "./itis3135/images/htmlValidationButton.png")
         document.getElementById("validation-button-img-css").setAttribute("src", path + "./itis3135/images/cssValidationButton.png");
     </script>
+    </footer>
 </body>
+
 </html>
