@@ -1,0 +1,107 @@
+:root{
+    --text: orange;
+    --background: black;
+    --links: #138A36;
+}
+
+body{
+    background-color: black;
+    color: orange;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header, main, footer{
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+main p, ul{
+    color:#70C1B3;
+    text-align: left;
+}
+
+main img{
+    width: 300px;
+    height: 200px;
+}
+
+
+footer{
+    margin-top: auto;
+}
+
+figcaption{
+    font-style: italic;
+}
+
+nav{
+    border-width: 2px;
+    border-radius: 5px;
+    border-style: solid;
+    height: 30px;
+}
+  
+nav > ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-inline-start: 0;
+    margin-block: 0;
+    height: 100%;
+}
+
+nav > ul > li {
+    color: #dfdfe2;
+    margin: 0 0.2rem;
+    padding: 0.2rem;
+    display: block;
+}
+
+li img{
+    width: 15%;
+    height: 15%;
+}
+
+li{
+    margin: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+img{
+    width: 400px;
+    border-radius: 5%;
+}
+
+a{
+    text-decoration: none;
+}
+
+main a{
+    padding: 10px;
+    border-width: 2px;
+    border-radius: 5px;
+    border-style: solid;
+}
+
+a:any-link{
+    color:#138A36;
+}
+
+a:visited{
+    color:#138A36;
+}
+
+a:link{
+    color: #138A36;
+}
+
+a:hover{
+    text-decoration: underline;
+    color:#70C1B3;
+}

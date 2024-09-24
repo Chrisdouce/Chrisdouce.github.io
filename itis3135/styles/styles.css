@@ -1,7 +1,8 @@
 :root{
-    --text: orange;
-    --background: black;
-    --links: #138A36;
+    --heading-color: orange;
+    --background-colo: black;
+    --link-color: #138A36;
+    --paragraph-color: #45ceb7;
 }
 
 body{
@@ -17,10 +18,12 @@ header, main, footer{
     width: 95%;
     max-width: 1200px;
     margin: 0 auto;
+    text-align: center;
 }
 
-header, main a{
-    text-align: center;
+main p{
+    color:var(--paragraph-color);
+    text-align: left;
 }
 
 main img{
@@ -30,7 +33,10 @@ main img{
 
 footer{
     margin-top: auto;
-    text-align: center;
+}
+
+figcaption{
+    font-style: italic;
 }
 
 nav{
@@ -97,5 +103,5 @@ a:link{
 
 a:hover{
     text-decoration: underline;
-    color:#70C1B3;
+    color: var(--paragraph-color);
 }
