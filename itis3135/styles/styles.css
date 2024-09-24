@@ -1,7 +1,7 @@
 :root{
     --heading-color: orange;
-    --background-colo: black;
-    --link-color: #138A36;
+    --background-color: black;
+    --link-color: #1aaf47;
     --paragraph-color: #45ceb7;
 }
 
@@ -11,7 +11,6 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 header, main, footer{
@@ -19,6 +18,15 @@ header, main, footer{
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header{
+    text-align: center;
+}
+
+main{
+    font-size: large;
 }
 
 main p{
@@ -40,8 +48,9 @@ figcaption{
 }
 
 nav{
-    border-width: 2px;
-    border-radius: 5px;
+    font-size: larger;
+    border-width: 3px;
+    border-radius: 10px;
     border-style: solid;
     height: 30px;
 }
@@ -56,21 +65,8 @@ nav > ul{
 }
 
 nav > ul > li {
-    color: #dfdfe2;
-    margin: 0 0.2rem;
-    padding: 0.2rem;
     display: block;
-}
-
-li img{
-    width: 15%;
-    height: 15%;
-}
-
-li{
-    margin: 0px;
-    padding-left: 10px;
-    padding-right: 10px;
+    
 }
 
 img{
@@ -90,18 +86,18 @@ main a{
 }
 
 a:any-link{
-    color:#138A36;
+    color:var(--link-color);
 }
 
 a:visited{
-    color:#138A36;
+    color:var(--link-color);
 }
 
 a:link{
-    color: #138A36;
+    color:var(--link-color);
 }
 
 a:hover{
     text-decoration: underline;
-    color: var(--paragraph-color);
+    color:var(--paragraph-color);
 }

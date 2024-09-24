@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Footer</title>
+    <style>
+        img{
+            width: 100px;
+        }
+    </style>
 </head>
 <body>
     <footer>
@@ -23,11 +28,11 @@
     <p>
         Website made by <a id="dynamic" href="#">CDevDesigns &copy;2024</a>, <em>Certified in <a href="https://www.freecodecamp.org/certification/cdoucett/responsive-web-design" target="_new">Responsive Web Design</a></em>.
     </p>
-    <a id="validation-button-html"><img id="validation-button-img-html" src="./itis3135/images/htmlValidationButton.png" style="width: 100px;" alt="html validation button"></a>
-    <a id="validation-button-css"><img id="validation-button-img-css" src="./itis3135/images/cssValidationButton.png" style="width: 100px;" alt="css validation button"></a>
+    <a id="validation-button-html"><img id="validation-button-img-html" src="./itis3135/images/htmlValidationButton.png" alt="html validation button"></a>
+    <a id="validation-button-css"><img id="validation-button-img-css" src="./itis3135/images/cssValidationButton.png" alt="css validation button"></a>
     <script>
         let link = document.getElementById('dynamic');
-        let currentPath = window.location.pathname;
+        const currentPath = window.location.pathname;
         
         // Check the current path to set the correct link for uncc webpages
         if (currentPath.includes('itis3135')) {
