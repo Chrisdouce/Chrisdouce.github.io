@@ -33,6 +33,18 @@ main p{
     color:var(--paragraph-color);
     text-align: left;
 }
+main ul li{
+    color: #45ceb7;
+    text-align: left;
+    padding: 10px;
+}
+
+hr{
+    display: block;
+    border: 0;
+    border-top: 1px solid orange;
+    padding: 2px;
+}
 
 main img{
     width: 300px;
