@@ -90,11 +90,44 @@ a{
     text-decoration: none;
 }
 
+main ol{
+    text-align: left;
+}
+
 main a{
     padding: 10px;
     border-width: 2px;
     border-radius: 5px;
     border-style: solid;
+}
+
+table{
+    margin: auto;
+    text-align: left;
+    border-collapse: collapse; 
+    border-spacing: 10px;
+    width: 92.3567%; 
+    height: 201px;
+}
+
+th{
+    background-color: black;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(51, 51, 51);
+}
+tr:nth-child(odd) {
+    background-color: rgb(68, 68, 68);
+}
+
+th{
+    text-align: center;
+}
+
+tr a {
+    border: 0px;
+    padding: 0px;
 }
 
 a:any-link{

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christopher Doucette's Tables</title>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    <div data-include="components/header.html"></div>
+    <main>
+        <h2>Tables Page</h2>
+        <hr>
+        <h3>My Tabular Data</h3>
+        <ol>
+            <li>Emily Johnson emily.johnson@gmail.com 5</li>
+            <li>Marcus Lee marcus.lee@gmail.com 17</li>
+            <li>Sophia Clarke sophia.clarke@gmail.com 6</li>
+            <li>David Turner david.turner@gmail.com 19</li>
+            <li>Isabella Martinez isabella.martinez@gmail.com 25</li>
+            <li>Oliver Brooks oliver.brooks@gmail.com 12</li>
+            <li>Chloe Rivera chloe.rivera@gmail.com 14</li>
+        </ol>
+        <h3>Employee Data in Simple Table</h3>
+        <table border="1">
+            <tbody>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Years of Service</th>
+                </tr>
+                <tr>
+                    <td>Emily Johnson</td>
+                    <td><span><a href="mailto:emily.johnson@gmail.com" target="_blank">emily.johnson@gmail.com</a></span></td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>Marcus Lee</td>
+                    <td><span><a href="mailto:marcus.lee@gmail.com" target="_blank">marcus.lee@gmail.com</a></span></td>
+                    <td>17</td>
+                </tr>
+                <tr>
+                    <td>Sophia Clarke</td>
+                    <td><span><a href="mailto:sophia.clarke@gmail.com" target="_blank">sophia.clarke@gmail.com</a></span></td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>David Turner</td>
+                    <td><span><a href="mailto:david.turner@gmail.com" target="_blank">david.turner@gmail.com</a></span></td>
+                    <td>19</td>
+                </tr>
+                <tr>
+                    <td>Isabella Martinez</td>
+                    <td><span><a href="mailto:isabella.martinez@gmail.com" target="_blank">isabella.martinez@gmail.com</a></span></td>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <td>Oliver Brooks</td>
+                    <td><span><a href="mailto:oliver.brooks@gmail.com" target="_blank">oliver.brooks@gmail.com</a></span></td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>Chloe Rivera</td>
+                    <td><span><a href="mailto:chloe.rivera@gmail.com" target="_blank">chloe.rivera@gmail.com</a></span></td>
+                    <td>14</td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>Employee Data in Complex Table</h3>
+        <table border="1">
+            <thead>
+              <tr>
+                <th id="cat-header" scope="col">Category</th>
+                <th id="name-header" scope="col">Name</th>
+                <th id="email-header" scope="col">Email</th>
+                <th id="years-of-service-header" scope="col">Years of Service</th>
+                <th id="monthly-salary-header" scope="col">Monthly Salary</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td headers="cat-header" rowspan="2" scope="row">Boss</td>
+                <td headers="name-header">Emily Johnson</td>
+                <td headers="email-header"><a href="mailto:emily.johnson@gmail.com" target="_blank">emily.johnson@gmail.com</a></td>
+                <td headers="years-of-service-header">5</td>
+                <td headers="monthly-salary-header">$10,000</td>
+              </tr>
+              <tr>
+                <td headers="name-header">Marcus Lee</td>
+                <td headers="email-header"><a href="mailto:marcus.lee@gmail.com" target="_blank">marcus.lee@gmail.com</a></td>
+                <td headers="years-of-service-header">17</td>
+                <td headers="monthly-salary-header">$10,000</td>
+              </tr>
+              <tr>
+                <td headers="cat-header" rowspan="2" scope="row">Manager</td>
+                <td headers="name-header">Sophia Clarke</td>
+                <td headers="email-header"><a href="mailto:sophia.clarke@gmail.com" target="_blank">sophia.clarke@gmail.com</a></td>
+                <td headers="years-of-service-header">6</td>
+                <td headers="monthly-salary-header">$7,000</td>
+              </tr>
+              <tr>
+                <td headers="name-header">David Turner</td>
+                <td headers="email-header"><a href="mailto:david.turner@gmail.com" target="_blank">david.turner@gmail.com</a></td>
+                <td headers="years-of-service-header">19</td>
+                <td headers="monthly-salary-header">$7,000</td>
+              </tr>
+              <tr>
+                <td headers="cat-header" rowspan="3" scope="row">Worker</td>
+                <td headers="name-header">Isabella Martinez</td>
+                <td headers="email-header"><a href="mailto:isabella.martinez@gmail.com" target="_blank">isabella.martinez@gmail.com</a></td>
+                <td headers="years-of-service-header">25</td>
+                <td headers="monthly-salary-header">$4,000</td>
+              </tr>
+              <tr>
+                <td headers="name-header">Oliver Brooks</td>
+                <td headers="email-header"><a href="mailto:oliver.brooks@gmail.com" target="_blank">oliver.brooks@gmail.com</a></td>
+                <td headers="years-of-service-header">12</td>
+                <td headers="monthly-salary-header">$4,000</td>
+              </tr>
+              <tr>
+                <td headers="name-header">Chloe Rivera</td>
+                <td headers="email-header"><a href="mailto:chloe.rivera@gmail.com" target="_blank">chloe.rivera@gmail.com</a></td>
+                <td headers="years-of-service-header">14</td>
+                <td headers="monthly-salary-header">$4,000</td>
+              </tr>
+              <tr>
+                <th scope="col" colspan="3">Total:</th>
+                <td headers="years-of-service-header">112</td>
+                <td headers="monthly-salary-header">$46,000</td>
+              </tr>
+            </tbody>
+          </table>
+        <p></p>
+    </main>
+    <div data-include="components/footer.html"></div>
+    <script src="scripts/include.js"></script>
+</body>
+</html>
