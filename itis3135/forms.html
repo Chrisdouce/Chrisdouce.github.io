@@ -11,10 +11,51 @@
     <div data-include="components/header.html"></div>
     <main>
         <h2>Forms Page</h2>
-        <img src="./images/plink-wide-cat.gif" alt="funny cat gif">
         <hr>
-        
-        <hr>
+        <form action="#">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required><br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="123-456-7890" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required><br>
+            <fieldset>
+                <legend>Select Type of CD:</legend>
+                <input type="radio" id="game" name="cd-type" value="game">
+                <label for="game">Game</label><br>
+                <input type="radio" id="music" name="cd-type" value="music">
+                <label for="music">Music</label><br>
+                <input type="radio" id="podcast" name="cd-type" value="podcast">
+                <label for="podcast">Podcast</label><br>
+                <input type="radio" id="rom" name="cd-type" value="rom">
+                <label for="rom">ROM</label><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Email Preferences:</legend>
+                <input type="checkbox" id="newsletter" name="email-preference" value="newsletter" required>
+                <label for="newsletter">Weekly Newsletters</label><br>
+                <input type="checkbox" id="new-cds" name="email-preference" value="new-cds">
+                <label for="new-cds">New CDs</label><br>
+                <input type="checkbox" id="sales" name="email-preference" value="sales" required>
+                <label for="sales">Sales</label><br>
+                <input type="checkbox" id="survey" name="email-preference" value="survey">
+                <label for="survey">Survey Feedback</label><br>
+            </fieldset>
+
+            <label for="contact-method">Method of contact:</label>
+            <select id="contact-method" name="contact-method" required>
+                <option value="phone" selected>Phone</option>
+                <option value="email">Email</option>
+                <option value="both">Both</option>
+            </select><br>
+
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+        </form>
+        <br>
     </main>
     <div data-include="components/footer.html"></div>
     <script src="scripts/include.js"></script>

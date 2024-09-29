@@ -90,6 +90,15 @@ a{
     text-decoration: none;
 }
 
+form{
+    text-align: left;
+}
+
+form button{
+    background-color: rgb(37, 37, 37);
+    color:orange;
+}
+
 main ol{
     text-align: left;
 }
