@@ -92,11 +92,21 @@ a{
 
 form{
     text-align: left;
+    width: 80%;
+    margin: 0 auto 10px auto;
+    max-width: 600px;
 }
 
 form button{
     background-color: rgb(37, 37, 37);
     color:orange;
+}
+
+label {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: inline-block;
+    width: 29%;
 }
 
 main ol{
