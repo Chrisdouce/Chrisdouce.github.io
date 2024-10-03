@@ -53,6 +53,7 @@ main img{
 
 footer{
     margin-top: auto;
+    padding-top: 25px;
 }
 
 figcaption{
@@ -164,4 +165,25 @@ a:link{
 a:hover{
     text-decoration: underline;
     color:var(--paragraph-color);
+}
+
+/* MOBILE RULES */
+/* Foundational Three */
+/* Rule Overrides For Laptops / Small Screens */
+@media screen and ( min-width: 981px ) and ( max-width: 1400px ) {
+    body {
+        font-size: medium;
+    }
+}
+/* Rule Overrides For Tablet Devices */
+@media screen and ( min-width: 601px ) and ( max-width: 980px )  {
+    body {
+        font-size: small;
+    }
+}
+/* Rule Overrides For Mobile Devices */
+@media screen and ( min-width: 370px ) and ( max-width: 600px ) {
+    body {
+        font-size: smaller;
+    }
 }
