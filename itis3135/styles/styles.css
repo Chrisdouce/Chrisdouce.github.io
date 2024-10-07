@@ -121,6 +121,21 @@ main a{
     border-style: solid;
 }
 
+main p a{
+    padding: 0px;
+    border-width: 0px;
+    border-radius: 0px;
+    border-style: none;
+}
+
+main li a{
+    padding: 0px;
+    border-width: 0px;
+    border-radius: 0px;
+    border-style: none;
+}
+
+
 table{
     margin: auto;
     text-align: left;
