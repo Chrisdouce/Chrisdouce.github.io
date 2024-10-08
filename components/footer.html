@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer</title>
+    <style>
+        img{
+            width: 100px;
+        }
+        ul{
+            padding-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <footer>
+    <nav>
+        <ul>
+            <li><a href="https://github.com/Chrisdouce" target="_new">Github</a></li>
+            <li>|</li>
+            <li><a href="https://webpages.charlotte.edu/cdoucett" target="_new">UNCC Web</a></li>
+            <li>|</li>
+            <li><a href="https://chrisdouce.github.io/" target="_new">GitHub.io</a></li>
+            <li>|</li>
+            <li><a id="itis3135" href="./itis3135/">ITIS 3135 Site</a></li>
+            <li>|</li>
+            <li><a href="https://www.linkedin.com/in/christopher-doucette-7596a7222/" target="_new"> LinkedIn</a></li>
+        </ul>
+    </nav>
+    <script>
+        let link = document.getElementById('dynamic');
+        const currentPath = window.location.pathname;
+        document.getElementById("validation-button-html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
+        document.getElementById("validation-button-css").setAttribute("href","https://jigaw.w3.org/css-validator/validator?uri=" + location.href);
+        
+        
+    </script>
+    </footer>
+</body>
+
+</html>
