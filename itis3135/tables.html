@@ -11,6 +11,7 @@
     <div data-include="components/header.html"></div>
     <main>
         <h2>Tables Page</h2>
+        <em>Table demonstration using html</em>
         <hr>
         <h3>My Tabular Data</h3>
         <ol>
@@ -68,69 +69,72 @@
             </tbody>
         </table>
         <h3>Employee Data in Complex Table</h3>
-        <table border="1">
-            <thead>
-              <tr>
-                <th id="cat-header" scope="col">Category</th>
-                <th id="name-header" scope="col">Name</th>
-                <th id="email-header" scope="col">Email</th>
-                <th id="years-of-service-header" scope="col">Years of Service</th>
-                <th id="monthly-salary-header" scope="col">Monthly Salary</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td headers="cat-header" rowspan="2" scope="row">Boss</td>
-                <td headers="name-header">Emily Johnson</td>
-                <td headers="email-header"><a href="mailto:emily.johnson@gmail.com" target="_blank">emily.johnson@gmail.com</a></td>
-                <td headers="years-of-service-header">5</td>
-                <td headers="monthly-salary-header">$10,000</td>
-              </tr>
-              <tr>
-                <td headers="name-header">Marcus Lee</td>
-                <td headers="email-header"><a href="mailto:marcus.lee@gmail.com" target="_blank">marcus.lee@gmail.com</a></td>
-                <td headers="years-of-service-header">17</td>
-                <td headers="monthly-salary-header">$10,000</td>
-              </tr>
-              <tr>
-                <td headers="cat-header" rowspan="2" scope="row">Manager</td>
-                <td headers="name-header">Sophia Clarke</td>
-                <td headers="email-header"><a href="mailto:sophia.clarke@gmail.com" target="_blank">sophia.clarke@gmail.com</a></td>
-                <td headers="years-of-service-header">6</td>
-                <td headers="monthly-salary-header">$7,000</td>
-              </tr>
-              <tr>
-                <td headers="name-header">David Turner</td>
-                <td headers="email-header"><a href="mailto:david.turner@gmail.com" target="_blank">david.turner@gmail.com</a></td>
-                <td headers="years-of-service-header">19</td>
-                <td headers="monthly-salary-header">$7,000</td>
-              </tr>
-              <tr>
-                <td headers="cat-header" rowspan="3" scope="row">Worker</td>
-                <td headers="name-header">Isabella Martinez</td>
-                <td headers="email-header"><a href="mailto:isabella.martinez@gmail.com" target="_blank">isabella.martinez@gmail.com</a></td>
-                <td headers="years-of-service-header">25</td>
-                <td headers="monthly-salary-header">$4,000</td>
-              </tr>
-              <tr>
-                <td headers="name-header">Oliver Brooks</td>
-                <td headers="email-header"><a href="mailto:oliver.brooks@gmail.com" target="_blank">oliver.brooks@gmail.com</a></td>
-                <td headers="years-of-service-header">12</td>
-                <td headers="monthly-salary-header">$4,000</td>
-              </tr>
-              <tr>
-                <td headers="name-header">Chloe Rivera</td>
-                <td headers="email-header"><a href="mailto:chloe.rivera@gmail.com" target="_blank">chloe.rivera@gmail.com</a></td>
-                <td headers="years-of-service-header">14</td>
-                <td headers="monthly-salary-header">$4,000</td>
-              </tr>
-              <tr>
-                <th scope="col" colspan="3">Total:</th>
-                <td headers="years-of-service-header">112</td>
-                <td headers="monthly-salary-header">$46,000</td>
-              </tr>
-            </tbody>
-          </table>
+        <figure>
+          <table border="1">
+              <thead>
+                <tr>
+                  <th id="cat-header" scope="col">Category</th>
+                  <th id="name-header" scope="col">Name</th>
+                  <th id="email-header" scope="col">Email</th>
+                  <th id="years-of-service-header" scope="col">Years of Service</th>
+                  <th id="monthly-salary-header" scope="col">Monthly Salary</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td headers="cat-header" rowspan="2" scope="row">Boss</td>
+                  <td headers="name-header">Emily Johnson</td>
+                  <td headers="email-header"><a href="mailto:emily.johnson@gmail.com" target="_blank">emily.johnson@gmail.com</a></td>
+                  <td headers="years-of-service-header">5</td>
+                  <td headers="monthly-salary-header">$10,000</td>
+                </tr>
+                <tr>
+                  <td headers="name-header">Marcus Lee</td>
+                  <td headers="email-header"><a href="mailto:marcus.lee@gmail.com" target="_blank">marcus.lee@gmail.com</a></td>
+                  <td headers="years-of-service-header">17</td>
+                  <td headers="monthly-salary-header">$10,000</td>
+                </tr>
+                <tr>
+                  <td headers="cat-header" rowspan="2" scope="row">Manager</td>
+                  <td headers="name-header">Sophia Clarke</td>
+                  <td headers="email-header"><a href="mailto:sophia.clarke@gmail.com" target="_blank">sophia.clarke@gmail.com</a></td>
+                  <td headers="years-of-service-header">6</td>
+                  <td headers="monthly-salary-header">$7,000</td>
+                </tr>
+                <tr>
+                  <td headers="name-header">David Turner</td>
+                  <td headers="email-header"><a href="mailto:david.turner@gmail.com" target="_blank">david.turner@gmail.com</a></td>
+                  <td headers="years-of-service-header">19</td>
+                  <td headers="monthly-salary-header">$7,000</td>
+                </tr>
+                <tr>
+                  <td headers="cat-header" rowspan="3" scope="row">Worker</td>
+                  <td headers="name-header">Isabella Martinez</td>
+                  <td headers="email-header"><a href="mailto:isabella.martinez@gmail.com" target="_blank">isabella.martinez@gmail.com</a></td>
+                  <td headers="years-of-service-header">25</td>
+                  <td headers="monthly-salary-header">$4,000</td>
+                </tr>
+                <tr>
+                  <td headers="name-header">Oliver Brooks</td>
+                  <td headers="email-header"><a href="mailto:oliver.brooks@gmail.com" target="_blank">oliver.brooks@gmail.com</a></td>
+                  <td headers="years-of-service-header">12</td>
+                  <td headers="monthly-salary-header">$4,000</td>
+                </tr>
+                <tr>
+                  <td headers="name-header">Chloe Rivera</td>
+                  <td headers="email-header"><a href="mailto:chloe.rivera@gmail.com" target="_blank">chloe.rivera@gmail.com</a></td>
+                  <td headers="years-of-service-header">14</td>
+                  <td headers="monthly-salary-header">$4,000</td>
+                </tr>
+                <tr>
+                  <th scope="col" colspan="3">Total:</th>
+                  <td headers="years-of-service-header">112</td>
+                  <td headers="monthly-salary-header">$46,000</td>
+                </tr>
+              </tbody>
+            </table>
+            <figcaption>Table 2: Detailed employee data categorized by position, with salary information.</figcaption>
+        </figure>
         <p></p>
     </main>
     <div data-include="components/footer.html"></div>

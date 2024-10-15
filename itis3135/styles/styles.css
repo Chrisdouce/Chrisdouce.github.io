@@ -33,6 +33,12 @@ main p{
     color:var(--paragraph-color);
     text-align: left;
 }
+
+main em{
+    color:var(--paragraph-color);
+    text-align: center;
+}
+
 main ul li{
     color: #45ceb7;
     text-align: left;
