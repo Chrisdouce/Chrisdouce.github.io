@@ -1,0 +1,183 @@
+:root{
+    --heading-color: orange;
+    --background-color: black;
+    --link-color: #1aaf47;
+    --paragraph-color: #45ceb7;
+}
+
+body{
+    background-color: black;
+    color: orange;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header, main, footer{
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header{
+    text-align: center;
+}
+
+main{
+    font-size: large;
+}
+
+main p{
+    color:var(--paragraph-color);
+    text-align: left;
+}
+main ul li{
+    color: #45ceb7;
+    text-align: left;
+    padding: 10px;
+}
+
+hr{
+    display: block;
+    border: 0;
+    border-top: 1px solid orange;
+    padding: 2px;
+}
+
+main img{
+    width: 300px;
+    height: 200px;
+}
+
+footer{
+    margin-top: auto;
+    padding-top: 25px;
+}
+
+figcaption{
+    font-style: italic;
+}
+
+nav{
+    font-size: larger;
+    border-width: 3px;
+    border-radius: 10px;
+    border-style: solid;
+    height: 30px;
+}
+  
+nav > ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-inline-start: 0;
+    margin-block: 0;
+    height: 100%;
+}
+
+nav > ul > li {
+    display: block;
+    
+}
+
+img{
+    width: 400px;
+    border-radius: 5%;
+}
+
+a{
+    text-decoration: none;
+}
+
+form{
+    text-align: left;
+    width: 80%;
+    margin: 0 auto 10px auto;
+    max-width: 600px;
+}
+
+form button{
+    background-color: rgb(37, 37, 37);
+    color:orange;
+}
+
+label {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: inline-block;
+    width: 29%;
+}
+
+main ol{
+    text-align: left;
+}
+
+
+table{
+    margin: auto;
+    text-align: left;
+    border-collapse: collapse; 
+    border-spacing: 10px;
+    width: 92.3567%; 
+    height: 201px;
+}
+
+th{
+    background-color: black;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(51, 51, 51);
+}
+tr:nth-child(odd) {
+    background-color: rgb(68, 68, 68);
+}
+
+th{
+    text-align: center;
+}
+
+tr a {
+    border: 0px;
+    padding: 0px;
+}
+
+a:any-link{
+    color:var(--link-color);
+}
+
+a:visited{
+    color:var(--link-color);
+}
+
+a:link{
+    color:var(--link-color);
+}
+
+a:hover{
+    text-decoration: underline;
+    color:var(--paragraph-color);
+}
+
+/* MOBILE RULES */
+/* Foundational Three */
+/* Rule Overrides For Laptops / Small Screens */
+@media screen and ( min-width: 981px ) and ( max-width: 1400px ) {
+    body {
+        font-size: medium;
+    }
+}
+/* Rule Overrides For Tablet Devices */
+@media screen and ( min-width: 601px ) and ( max-width: 980px )  {
+    body {
+        font-size: small;
+    }
+}
+/* Rule Overrides For Mobile Devices */
+@media screen and ( min-width: 370px ) and ( max-width: 600px ) {
+    body {
+        font-size: smaller;
+    }
+}
