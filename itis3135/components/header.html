@@ -13,33 +13,23 @@
             <ul>
                 <li id="index"><a href="index.html">Home</a></li>
                 <li>|</li>
-                <li><a id="introduction" href="introduction.html">Introduction</a></li>
+                <li><a href="introduction.html">Introduction</a></li>
                 <li>|</li>
-                <li><a id="contract" href="contract.html">Contract</a></li>
+                <li><a href="contract.html">Contract</a></li>
                 <li>|</li>
-                <li><a id="about" href="about.html">About Us</a></li>
+                <li><a href="about.html">About Us</a></li>
                 <li>|</li>
                 <li><a href="./stuff/MY 3p!c H0m3 p@g3.htm">CRAPPY webpage</a></li>
                 <li>|</li>
-                <li><a id="website-evaluations"  href="website_evaluations.html">Website Evaluations</a></li>
+                <li><a href="website_evaluations.html">Website Evaluations</a></li>
                 <li>|</li>
-                <li><a id="tables"  href="tables.html">Tables</a></li>
+                <li><a href="tables.html">Tables</a></li>
                 <li>|</li>
-                <li><a id="forms"  href="forms.html">Forms</a></li>
+                <li><a href="forms.html">Forms</a></li>
+                <li>|</li>
+                <li><a href="project_overview.html">Project Overview</a></li>
             </ul>
         </nav>
     </header>
-    <script>
-        //Slices the path to what page it currently is
-        headerPath = currentPath.slice(currentPath.lastIndexOf("/")+1,currentPath.lastIndexOf(".")).replace("_","-");
-
-        let navElement = document.getElementById(headerPath);
-        if(navElement != null){
-            navElementStyle = navElement.style;
-            navElementStyle.border = "solid";
-            navElementStyle.borderWidth = "1px";
-            navElementStyle.color = "var(--link-color)";
-        }
-    </script>
 </body>
 </html>
