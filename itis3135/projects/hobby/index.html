@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christopher's hobby</title>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <style>
+        body{
+            background-color: #3A2449;
+            color: #FF6663;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header, main, footer{
+            width: 95%;
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        footer img {
+            width: 100px;
+        }
+        nav{
+            font-size: larger;
+            border-width: 3px;
+            border-radius: 10px;
+            border-style: solid;
+            height: 30px;
+        }
+        
+        nav > ul{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding-inline-start: 0;
+            margin-block: 0;
+            height: 100%;
+        }
+
+        nav > ul > li {
+            display: block;
+        }
+
+        a{
+            text-decoration: none;
+            color:#20BF55
+        }
+
+        a:visited{
+            color:#20BF55
+        }
+
+        a:hover{
+            text-decoration: underline;
+            color:#037171;
+        }
+
+        section {
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Fishing</h1>
+        <nav>
+            <ul>
+                <li><a href="#who">Who</a></li>
+                <li>|</li>
+                <li><a href="#what">What</a></li>
+                <li>|</li>
+                <li><a href="#when">When</a></li>
+                <li>|</li>
+                <li><a href="#where">Where</a></li>
+                <li>|</li>
+                <li><a href="#how">How</a></li>
+                <li>|</li>
+                <li><a href="#why">Why</a></li>
+                <li>|</li>
+                <li><a href="#ai">AI Stuff</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="who" >
+            <h2>Who</h2>
+            <p>3 figures</p>
+        </section>
+        <section id="what">
+            <h2>What</h2>
+            <p>3 figures</p>
+        </section>
+        <section id="when">
+            <h2>When</h2>
+            <p>3 figures</p>
+        </section>
+        <section id="where">
+            <h2>Where</h2>
+            <p>3 figures</p>
+        </section>
+        <section id="how">
+            <h2>How</h2>
+            <p>3 figures</p>
+        </section>
+        <section id="why">
+            <h2>Why</h2>
+            <p>3 figures</p>
+        </section>
+        <section id="ai">
+            <h2>Ai stuff</h2>
+            <hr>
+            <h3>Section fix</h3>
+            <img src="./images/ai-one.png" alt="ai prompt 1">
+            <p>Chat GPT 4.0 mini: I used the prompt "I'm having an issue where you have to reload the page for the location.hash to update, is there any way I can fix this?" to fix location.hash not updating when changing sections</p>
+            <hr>
+            
+        </section>
+    </main>
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="https://github.com/Chrisdouce" target="_new">GitHub</a></li>
+                <li>|</li>
+                <li><a href="https://webpages.charlotte.edu/cdoucett" target="_new">UNCC Web</a></li>
+                <li>|</li>
+                <li><a href="https://chrisdouce.github.io/" target="_new">GitHub.io</a></li>
+                <li>|</li>
+                <li><a id="itis3135" href="./itis3135/">ITIS 3135 Site</a></li>
+                <li>|</li>
+                <li><a href="https://www.linkedin.com/in/christopher-doucette-7596a7222/" target="_new">LinkedIn</a></li>
+                <li>|</li>
+                <li><a href="https://www.freecodecamp.org/cdoucett" target="_new">freeCodeCamp</a></li>
+                <li>|</li>
+                <li><a href="https://www.codecademy.com/profiles/cdoucet" target="_new">Codecademy</a></li>
+            </ul>
+        </nav>
+        <p>
+            Website made by <a id="dynamic" href="#">CDevDesigns &copy;2024</a>, <em>Certified in <a href="https://www.freecodecamp.org/certification/cdoucett/responsive-web-design" target="_new">Responsive Web Design</a></em>.
+        </p>
+        <a id="validation-button-html"><img id="validation-button-img-html" src="./images/htmlValidationButton.png" alt="html validation button"></a>
+        <a id="validation-button-css"><img id="validation-button-img-css" src="./images/cssValidationButton.png" alt="css validation button"></a>
+        <script>
+            document.getElementById("validation-button-html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
+            document.getElementById("validation-button-css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+            
+
+
+            function updateSection() {
+                const sectionPath = window.location.hash;
+                
+                // Hide all sections
+                document.querySelectorAll('section').forEach(section => {
+                    section.style.display="none";
+                });
+
+                // Show the selected section
+                if (sectionPath === "") {
+                    document.getElementById("who").style.display="block";
+                } else {
+                    document.getElementById(sectionPath.slice(1)).style.display="block";
+                }
+            }
+
+            //Ai used here
+            // Initial call to show the correct section when the page loads
+            updateSection();
+
+            // Listen for hash changes
+            window.addEventListener('hashchange', updateSection);
+            
+        </script>
+    </footer>
+</body>
+</html>

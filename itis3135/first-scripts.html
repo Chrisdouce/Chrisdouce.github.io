@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christopher's Scripts</title>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <style>
+        button{
+            font-size: large;
+            display: block;
+            margin: 0 auto;
+        }
+        div{
+            text-align: left;
+            width: 80%;
+            margin: 0 auto 10px auto;
+            max-width: 800px;
+            overflow: hidden;
+        }
+        div button{
+            background-color: rgb(37, 37, 37);
+            color:orange;
+        }
+        h3{
+            text-align: center;
+        }
+        div p{
+            text-align: center;
+        }
+        input{
+            float: right;
+            clear: both;
+        }
+        select{
+            float: right;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div data-include="components/header.html"></div>
+    <main>
+        <h2>First JavaScript scripts</h2>
+        <em>Using scripts to display time and display user information</em>
+        <hr>
+        <div>
+            <h3 id="current-date"></h3>
+            <h3>Welcome message</h3>
+            <label for="user-name">Name:</label>
+            <input id="user-name" name="user-name"><br>
+            <label for="user-emote">How are you feeling?</label>
+            <input id="user-emote" name="user-emote"><br>
+            <button onclick="userWelcome()">Submit Name</button><br>
+            <p id="welcome-message"></p>
+
+            <h3>Number to polygon</h3>
+            <label for="user-number">Favorite number:</label>
+            <input id="user-number" name="user-number"><br>
+            <button onclick="numberConvertor()">Submit Number</button>
+            <p id="shape"></p>
+            <hr>
+            <h3>Fun fact generator</h3>
+            <button onclick="factGenerator()">Generate Fact</button>
+            <p id="fact"></p>
+
+            <h3>Role selector</h3>
+            <fieldset>
+                <legend>Select your role:</legend>
+                <input type="radio" id="leader" name="role" value="leader">
+                <label for="leader">Leader</label><br>
+                <input type="radio" id="captain" name="role" value="captain">
+                <label for="captain">Captain</label><br>
+                <input type="radio" id="follower" name="role" value="follower">
+                <label for="follower">Follower</label><br>
+                <input type="radio" id="alone" name="role" value="alone">
+                <label for="alone">Alone</label><br>
+            </fieldset><br>
+            <button onclick="getRole()">Get Role</button>
+            <p id="role"></p>
+
+            <h3>Rent price</h3>
+            <label for="cd-price">Enter CD price:</label>
+            <input id="cd-price" name="cd-price"><br>
+            <label for="rent-time">Rent time:</label>
+            <select id="rent-time" name="time">
+                <option value="1">One Month</option>
+                <option value="3">Three Months</option>
+                <option value="6">Six Months</option>
+                <option value="12">One Year</option>
+            </select>
+            <button onclick="rentCalculator()">Calculate rent price</button>
+            <p id="total-rent"></p>
+            
+            <h3>Inventory distributor</h3>
+            <label for="space">Enter total inventory space:</label>
+            <input id="space" name="space"><br>
+            <button onclick="inventoryRatioCalculator()">Calculate inventory ratio</button>
+            <p id="total-ratio"></p>
+        </div>
+        
+    </main>
+    <div data-include="components/footer.html"></div>
+    <script src="./scripts/include.js"></script>
+    <script src="./scripts/first-scripts.js"></script>
+</body>
+</html>

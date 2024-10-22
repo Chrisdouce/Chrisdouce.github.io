@@ -71,7 +71,7 @@ nav{
     border-width: 3px;
     border-radius: 10px;
     border-style: solid;
-    height: 30px;
+    height: 35px;
 }
   
 nav > ul{
@@ -85,7 +85,6 @@ nav > ul{
 
 nav > ul > li {
     display: block;
-    
 }
 
 img{
@@ -140,7 +139,6 @@ main li a{
     border-radius: 0px;
     border-style: none;
 }
-
 
 table{
     margin: auto;
