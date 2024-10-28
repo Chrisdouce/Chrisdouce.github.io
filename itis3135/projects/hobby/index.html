@@ -20,7 +20,14 @@
             margin: 0 auto;
             text-align: center;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: larger;
         }
+
+        main img{
+            width: 400px;
+            height: 300px;
+        }
+
         footer img {
             width: 100px;
         }
@@ -63,24 +70,46 @@
             display: none;
         }
 
+        main ul {
+            list-style-position: inside;
+            text-align: left;
+            margin: auto 0;
+        }
+
+        figcaption{
+            font-style: italic;
+        }
+
+        footer{
+            padding-top: 20px;
+        }
+        table{
+            margin: auto;
+            text-align: left;
+            border-collapse: collapse; 
+            border-spacing: 10px;
+            width: 92.3567%; 
+            height: 201px;
+        }
+
     </style>
 </head>
 <body>
     <header>
-        <h1>Fishing</h1>
+        <h1>Fishing Hobby</h1>
         <nav>
             <ul>
-                <li><a href="#who">Who</a></li>
+                <li><a href="#what">Home</a></li>
                 <li>|</li>
-                <li><a href="#what">What</a></li>
+                <li><a href="#who">About</a></li>
                 <li>|</li>
-                <li><a href="#when">When</a></li>
+                <li><a href="#when">Prime Times</a></li>
                 <li>|</li>
-                <li><a href="#where">Where</a></li>
+                <li><a href="#where">Favorite Locations</a></li>
                 <li>|</li>
-                <li><a href="#how">How</a></li>
+                <li><a href="#how">Needs</a></li>
                 <li>|</li>
-                <li><a href="#why">Why</a></li>
+                <li><a href="#why">Why Fishing?</a></li>
                 <li>|</li>
                 <li><a href="#ai">AI Stuff</a></li>
             </ul>
@@ -88,29 +117,107 @@
     </header>
 
     <main>
-        <section id="who" >
-            <h2>Who</h2>
-            <p>3 figures</p>
-        </section>
         <section id="what">
-            <h2>What</h2>
-            <p>3 figures</p>
+            <h2>Home</h2>
+            <hr>
+            <figure>
+                <img src="./images/home-fishing.jpg" alt="Calm day out at the ocean">
+                <figcaption>Calm day out at the ocean</figcaption>
+            </figure>
+            <p>Hello, my name is Christopher Doucette and this site is about the joy in fishing!</p>
+            <p>Fishing is a wonderful way to connect with nature and relax.</p>
+        </section>
+        <section id="who" >
+            <h2>About</h2>
+            <hr>
+            <figure>
+                <img src="./images/fish-variety.jpg" alt="Different types of fish">
+                <figcaption>Various fish species</figcaption>
+            </figure>
+            <p>Learn about the different types of fish, and why anglers are drawn to the water.</p>
+            <p>Fishing has been a popular pastime for centuries, enjoyed worldwide.</p>
         </section>
         <section id="when">
-            <h2>When</h2>
-            <p>3 figures</p>
+            <h2>Prime Hours of Fishing</h2>
+            <hr>
+            <p>Knowing when to fish can significantly impact your success.</p>
+            <figure>
+                <img src="./images/sunset-fishing.jpg" alt="Fishing during sunset">
+                <figcaption>Sunset is one of the best times to fish</figcaption>
+            </figure>
+            <p>Early mornings and late evenings are often the most productive times.</p>
         </section>
         <section id="where">
-            <h2>Where</h2>
-            <p>3 figures</p>
+            <h2>Where are the best locations to fish</h2>
+            <hr>
+            <figure>
+                <img src="./images/lake-fishing.jpg" alt="Fishing at a lake">
+                <figcaption>Lake fishing offers a calm environment</figcaption>
+            </figure>
+            <table>
+                <tr>
+                    <th>Location</th>
+                    <th>Best Species</th>
+                </tr>
+                <tr>
+                    <td>Lake Tahoe</td>
+                    <td>Trout, Salmon</td>
+                </tr>
+                <tr>
+                    <td>Florida Keys</td>
+                    <td>Tarpon, Snapper</td>
+                </tr>
+            </table>
+            <p>Each location offers a unique experience with a variety of fish species.</p>
         </section>
         <section id="how">
-            <h2>How</h2>
-            <p>3 figures</p>
+            <h2>Fishing Gear</h2>
+            <hr>
+            <figure>
+                <img src="./images/how-fishing.jpg" alt="Fishing rod is the start">
+                <figcaption>Fishing rod is the start</figcaption>
+            </figure>
+            <p>Essential fishing gear includes rods, reels, and bait suited to the type of fish you're targeting.</p>
+            <p>Proper equipment can include:</p>
+            <ul>
+                <li>Fishing Rod and Reel
+                    <ul>
+                        <li>Spinning Rods</li>
+                        <li>Baitcasting Rods</li>
+                        <li>Fly Rods</li>
+                    </ul>
+                </li>
+                <li>Bait and Lures
+                    <ul>
+                        <li>Live Bait (worms, minnows)</li>
+                        <li>Artificial Lures (spinners, jigs, crankbaits)</li>
+                        <li>Soft Plastics (worms, grubs)</li>
+                    </ul>
+                </li>
+                <li>Fishing Line
+                    <ul>
+                        <li>Monofilament</li>
+                        <li>Braided Line</li>
+                        <li>Fluorocarbon</li>
+                    </ul>
+                </li>
+                <li>Tackle Box</li>
+                <li>Fishing Hooks</li>
+                <li>Sinkers and Weights</li>
+                <li>Bobbers and Floats</li>
+                <li>Fishing Pliers and Scissors</li>
+                <li>Net or Fish Gripper</li>
+            </ul>
         </section>
         <section id="why">
-            <h2>Why</h2>
-            <p>3 figures</p>
+            <h2>Why Fish?</h2>
+            <hr>
+            <p>Fishing offers relaxation, excitement, and an escape from daily routines.</p>
+            <figure>
+                <img src="./images/fishing-joy.jpg" alt="Happy fisherman">
+                <figcaption>The joy of a good catch</figcaption>
+            </figure>
+            <p>Many fish for sport, while others find peace and meditation in the activity.</p>
         </section>
         <section id="ai">
             <h2>Ai stuff</h2>
@@ -119,7 +226,7 @@
             <img src="./images/ai-one.png" alt="ai prompt 1">
             <p>Chat GPT 4.0 mini: I used the prompt "I'm having an issue where you have to reload the page for the location.hash to update, is there any way I can fix this?" to fix location.hash not updating when changing sections</p>
             <hr>
-            
+            <p>All images are not AI and came from <a href="https://unsplash.com/s/photos/fishing">HERE</a></p>
         </section>
     </main>
 
@@ -132,7 +239,7 @@
                 <li>|</li>
                 <li><a href="https://chrisdouce.github.io/" target="_new">GitHub.io</a></li>
                 <li>|</li>
-                <li><a id="itis3135" href="./itis3135/">ITIS 3135 Site</a></li>
+                <li><a id="itis3135" href="../../index.html">ITIS 3135 Site</a></li>
                 <li>|</li>
                 <li><a href="https://www.linkedin.com/in/christopher-doucette-7596a7222/" target="_new">LinkedIn</a></li>
                 <li>|</li>
@@ -150,8 +257,6 @@
             document.getElementById("validation-button-html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
             document.getElementById("validation-button-css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
             
-
-
             function updateSection() {
                 const sectionPath = window.location.hash;
                 
@@ -162,7 +267,7 @@
 
                 // Show the selected section
                 if (sectionPath === "") {
-                    document.getElementById("who").style.display="block";
+                    document.getElementById("what").style.display="block";
                 } else {
                     document.getElementById(sectionPath.slice(1)).style.display="block";
                 }
