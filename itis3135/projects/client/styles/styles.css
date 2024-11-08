@@ -1,16 +1,18 @@
 :root{
-    --heading-color: orange;
-    --background-color: black;
-    --link-color: #1aaf47;
-    --paragraph-color: #45ceb7;
+    --heading-color: #6CCFF6;
+    --background-color: #001011;
+    --link-color: #e94951;
+    --paragraph-color: #4086f7;
+    --temp-color: #EDCB96;
 }
 
 body{
     background-color: black;
-    color: orange;
+    color: #6CCFF6;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    font-size: larger;
 }
 
 header, main, footer{
@@ -18,11 +20,31 @@ header, main, footer{
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Saira Semi Condensed', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+form{
+    width: 80%;
+    margin: 0 auto 10px auto;
+    max-width: 1000px;
+}
+
+form p{
+    text-align: center;
+}
+
+form button{
+    background-color: rgb(37, 37, 37);
+    color:#EDCB96;
 }
 
 header{
     text-align: center;
+}
+
+header img{
+    width: 60px;
+    vertical-align: middle
 }
 
 main{
@@ -33,16 +55,16 @@ main p{
     color:var(--paragraph-color);
     text-align: left;
 }
+
 main ul li{
     color: #45ceb7;
-    text-align: left;
     padding: 10px;
 }
 
 hr{
     display: block;
     border: 0;
-    border-top: 1px solid orange;
+    border-top: 1px solid var(--paragraph-color);
     padding: 2px;
 }
 
@@ -91,17 +113,6 @@ a{
     text-decoration: none;
 }
 
-form{
-    text-align: left;
-    width: 80%;
-    margin: 0 auto 10px auto;
-    max-width: 600px;
-}
-
-form button{
-    background-color: rgb(37, 37, 37);
-    color:orange;
-}
 
 label {
     padding-top: 10px;

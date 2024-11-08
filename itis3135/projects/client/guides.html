@@ -5,17 +5,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TEPUS Guides</title>
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+    </style>
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
     <div data-include="./components/header.html"></div>
     <main>
         <h2>TEPUS Guides</h2>
-
+        <button id="previous">&lt;--- Previous </button>
+        <button id="next">Next ----&gt;</button>
         <hr>
-        <h4>This is a template</h4>
-        <hr>
+        <section id="quick">
+            <h2>Quick Info</h2>
+            <hr>
+            <ol>
+                <li>Be passive, don't engage if you don't have to.</li>
+                <li>If you are stacking, don't throw away your life for stacks it ruins early</li>
+                <li>Know your times:
+                    <ul>
+                        <li>8:50: First bees</li>
+                        <li>8:00: First middle bees</li>
+                        <li>7:20: Second bees</li>
+                        <li>7:00: Lane phase ends into first objective</li>
+                    </ul>
+                </li>
+                <li><a href="https://unite-db.com/">Unite DB</a> for learning general builds and move knowledge</li>
+                <li>Join the discord to get notification on Solas's Stream</li>
+            </ol>
+        </section>
+        <section id="general">
+            <h2>General Info</h2>
+            <hr>
+            <ol>
+                <li>Watch out for bots! They are hidden by the devs and you can see them at <a href="https://uniteapi.dev/">UniteAPI</a></li>
+                <li>If you need coins to unlock pokemon, use energy rewards to gain coins quick</li>
+                <li>Playing in threes or fives will help you improve greatly compared to solo</li>
+            </ol>
+        </section>
+        <section id="comp">
+            <h2>Team Composition &amp; Drafting</h2>
+            <hr>
+            <ol>
+                <li>Know how strong early you and your enemy's early games are</li>
+                <li>Ensure you and your lane partner have some secure</li>
+                <li>Don't pick junglers without a 5 gank if you have a bad early game team.</li>
+                <li>Know some general picks:
+                    <ul>
+                        <li>Wiggly beats most speedsters and pairs well with zera</li>
+                        <li>Umbreon is a one of the best first picks due to how versatile it is</li>
+                        <li>Never pick Falinks first</li>
+                        <li>Switching is very good for pokemon that are in high demand or difficult to counterpick</li>
+                        <li>Rule of thumb bans are the first 5 most pick/ highest winrate on <a href="https://uniteapi.dev/">UniteAPI</a></li>
+                    </ul>
+                </li>
+            </ol>
+        </section>
+        <section id="lane">
+            <h2>Lane Phase</h2>
+            <hr>
+            <ol>
+                <li>Skip the last two bunnies at the very start of the game to reach contested farm first</li>
+                <li>Call out who will be securing</li>
+                <li>In bottom lane, if the mage has a level 4 spike, go top and have defender stay bottom</li>
+                <li>In top lane, do NOT give free stacks or exp. Usually the one who scales late in that game can turn the tide of the entire match</li>
+                <li>Two people each from bottom and top lane should go to 8:00 middle bees. The other laners (usually defender and top laner) play defensively</li>
+                <li>Know your times:
+                    <ul>
+                        <li>8:50: First bees</li>
+                        <li>8:00: First middle bees</li>
+                        <li>7:20: Second bees</li>
+                        <li>7:00: Lane phase ends into first objective</li>
+                    </ul>
+                </li>
+            </ol>
+        </section>
+        <section id="jungle">
+            <h2>Jungling</h2>
+            <hr>
+            <ol>
+                <li>You should gank top since it usually contains your highest scaler.</li>
+                <li>If you win the lane you ganked hard, invade enemy jungle</li>
+                <li>If you went neutral, go back to your jungle to get 7/8</li>
+                <li>Do not die while ganking what so ever, it is by far the worst thing you can do for your team. Abaddon all team members even if you maybe can save them.</li>
+                <li>You should be able to rip objectives and will be bottom for that objective</li>
+            </ol>
+        </section>
     </main>
+    <div data-include="./components/footer.html"></div>
     <script src="./scripts/include.js"></script>
+    <script src="./scripts/guides.js"></script>
 </body>
 </html>

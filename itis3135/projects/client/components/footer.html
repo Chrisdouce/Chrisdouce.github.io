@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer</title>
+    <style>
+        img{
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <footer>
+    <nav>
+        <ul>
+            <li><a href="https://discord.com" target="_new">TEPUS Discord</a></li>
+            <li>|</li>
+            <li><a href="https://www.twitch.tv/solasgx_" target="_new">Twitch</a></li>
+        </ul>
+    </nav>
+    <p>
+        Website made by <a id="dynamic" href="#">CDevDesigns &copy;2024</a>, <em>Certified in <a href="https://www.freecodecamp.org/certification/cdoucett/responsive-web-design" target="_new">Responsive Web Design</a></em>, <em>Certified in <a href="https://www.freecodecamp.org/certification/cdoucett/javascript-algorithms-and-data-structures-v8" target="_new">JS</a></em>.
+    </p>
+    <a id="validation-button-html"><img id="validation-button-img-html" src="./images/htmlValidationButton.png" alt="html validation button"></a>
+    <a id="validation-button-css"><img id="validation-button-img-css" src="./images/cssValidationButton.png" alt="css validation button"></a>
+    <script>
+        let link = document.getElementById('dynamic');
+        const currentPath = window.location.pathname;
+        document.getElementById("validation-button-html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
+        document.getElementById("validation-button-css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+        
+        // Check the current path to set the correct link for uncc webpages
+        let path = "";
+        if (currentPath.includes('itis3135')) {
+            path = '.';
+        } else {
+            path = '';
+        }
+        document.getElementById("validation-button-img-html").setAttribute("src", path + "/images/htmlValidationButton.png");
+        document.getElementById("validation-button-img-css").setAttribute("src", path + "/images/cssValidationButton.png");
+
+        //ITIS link on home page fix
+        if (currentPath.includes('itis3135')) {
+            document.getElementById("itis3135").setAttribute("href", "./");
+        } else {
+            document.getElementById("itis3155").setAttribute("href", "/itis3135");
+        }
+        
+    </script>
+    </footer>
+</body>
+
+</html>

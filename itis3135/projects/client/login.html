@@ -5,17 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TEPUS Login</title>
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+    </style>
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
     <div data-include="./components/header.html"></div>
     <main>
-        <h2>Login</h2>
-
-        <hr>
-        <h4>This is a template</h4>
-        <hr>
+        <section id="login">
+            <h2>Login</h2>
+            <form action="#">
+                <label for="username">Username:</label>
+                <input id="username" required><br>
+                <label for="password" required>Password:</label>
+                <input id="password"><br>
+                <button type="submit">Login</button>
+            </form>
+            <a href="#signup">Create account</a>
+        </section>
+        <section id="signup">
+            <h2>Sign up</h2>
+            <form action="#">
+                <label for="email">Email:</label>
+                <input id="email" required><br>
+                <label for="newusername">Username:</label>
+                <input id="newusername" required><br>
+                <label for="newpassword">Password:</label>
+                <input id="newpassword" required><br>
+                <button type="submit">Login</button>
+            </form>
+            <a href="#login">Have an account? Sign in</a>
+        </section>
     </main>
+    <div data-include="./components/footer.html"></div>
     <script src="./scripts/include.js"></script>
+    <script src="./scripts/login.js"></script>
 </body>
 </html>

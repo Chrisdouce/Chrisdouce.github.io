@@ -5,17 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TEPUS Contact</title>
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+        button{
+            font-size: larger;
+        }
+    </style>
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
     <div data-include="./components/header.html"></div>
     <main>
         <h2>Contact Us!</h2>
-
         <hr>
-        <h4>This is a template</h4>
+        <h3><a href="mailto:chrisdouce33321@gmail.com">Email us here</a></h3>
         <hr>
+        <form action="#">
+            <h2>Subscribe to our Newsletter</h2>
+            <p style="text-align: center;">Newsletters about updates to the team, games, scrims, and more!</p>
+            <label for="name">Username:</label>
+            <input type="text" placeholder="Name" id="name" name="name" required><br>
+            <label for="email">Email:</label>
+            <input type="text" placeholder="Email address" id="email" name="email" required><br>
+            <label>
+            <input type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
+            </label><br>
+            <button type="submit" value="Subscribe">Subscribe</button>
+        </form>
+          
     </main>
+    <div data-include="./components/footer.html"></div>
     <script src="./scripts/include.js"></script>
 </body>
 </html>

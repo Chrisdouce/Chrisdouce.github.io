@@ -5,17 +5,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About TEPUS</title>
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+        
+        /* Container for each team member's profile */
+        .profile {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            flex-direction: row;
+        }
+
+        /* Profile text styling */
+        .profile p {
+            margin: 0 10px;
+            flex: 1;
+        }
+
+        /* Alternating image alignment */
+        .profile img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin: 10px;
+        }
+
+        /* Left-align for even profiles */
+        .profile:nth-of-type(2n) {
+            flex-direction: row-reverse;
+        }
+
+        ul{
+            text-align: center;
+            list-style-type: none;
+            padding: 0;
+        }
+    </style>
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
     <div data-include="./components/header.html"></div>
     <main>
-        <h2>About TEPUS</h2>
+        <h2>TEPUS Members</h2>
+        <hr>
+        <h2>Main Roster:</h2>
+        <h2>Captain</h2>
+        <div class="profile">
+            <h3>Solas <strong>~ Jungler</strong></h3>
+            <img src="./images/solas.png" alt="Solas pfp">
+            <p>Hey everyone! I'm Solas the captain/manager of the team! TEPUS started around the end of 2023 as a group of friends who loved playing Pokemon Unite. We have had a lot of success with our team and happy with each and everyone who is apart of it. I myself am the jungler playing Gardy, Leafeon, Glaceon, Mewtwo Y, and more.</p>
+        </div>
+        <h2>Vice Captain</h2>
+        <div class="profile">
+            <h3>GЯigoms <strong>~ Top lanner</strong></h3>
+            <img src="./images/grigoms.webp" alt="Grigoms pfp">
+            <p>(Not provided but here's my own description): Hello, I'm Grig, I'm the top laner and sometimes the jungler. If I'm upset, I play Absol; otherwise, I counterpick.</p>
+        </div>
+        <h2>Starters</h2>
+        <div class="profile">
+            <h3>Jackie <strong>~ Mage</strong></h3>
+            <img src="./images/jackie.png" alt="Jackie pfp">
+            <p>Hi all! I'm Jackie, and I'm the bottom-lane mage. I've been playing Unite for a couple of years and always enjoyed competitive growing up. When I first started playing, Tmacc and I would queue before we got to know the team and eventually joined in 2023. I mostly play Pikachu and Espeon but have been dabbling in other mons too!</p>
+        </div>
+        <div class="profile">
+            <h3>Yoshsick <strong>~ Defender</strong></h3>
+            <img src="./images/yoshick.png" alt="Yoshi pfp">
+            <p>Hello, I'm the defender and the clown of the team. I only recently joined the team in 2024, and it's been a blast ever since! I mostly play Slowbro and Umbreon since they are so versatile for the team, but I love pretty much all defenders in the game. I'm hopeful we will continue to improve and learn from this amazing team!</p>
+        </div>
+        <div class="profile">
+            <h3>GЯika <strong>~ Supporter</strong></h3>
+            <img src="./images/grika.jpeg" alt="Grika pfp">
+            <p>(Not provided but here's my own description): Hello, I'm Grika, the support, and I play pretty much all supporters for our top laner.</p>
+        </div>
 
         <hr>
-        <h4>This is a template</h4>
-        <hr>
+        <h2>Subs:</h2>
+        <ul>
+            <li>Saltey</li>
+            <li>Mephis</li>
+            <li>Chrispy</li>
+            <li>Tmacc</li>
+        </ul>
     </main>
+    <div data-include="./components/footer.html"></div>
     <script src="./scripts/include.js"></script>
 </body>
 </html>
