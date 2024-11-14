@@ -75,10 +75,7 @@ document.addEventListener("DOMContentLoaded", () => {
             <button onclick="validateHTML()">Validate HTML</button>
             <button onclick="validateCSS()">Validate CSS</button>
             <button onclick="validateAIM()">Validate AIM</button>
-            `
-        
-            //Buttons
-
+            `;
         }).catch((error) => console.error("Error fetching menu:", error));
 });
 
