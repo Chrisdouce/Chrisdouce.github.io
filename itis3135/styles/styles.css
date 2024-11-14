@@ -85,6 +85,7 @@ nav > ul{
 
 nav > ul > li {
     display: block;
+    font-size: medium;
 }
 
 img{
