@@ -11,5 +11,6 @@
     {"name": "First Script", "url": "first-scripts.html"},
     {"name": "Hobby", "url": "./projects/hobby/index.html"},
     {"name": "BYO Intro", "url": "byo_intro.html"},
-    {"name": "Drawing", "url": "drawing.html"}
+    {"name": "Drawing", "url": "drawing.html"},
+    {"name": "Gallery", "url": "slideshow.html"}
 ]
