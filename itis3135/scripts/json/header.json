@@ -12,5 +12,7 @@
     {"name": "Hobby", "url": "./projects/hobby/index.html"},
     {"name": "BYO Intro", "url": "byo_intro.html"},
     {"name": "Drawing", "url": "drawing.html"},
-    {"name": "Gallery", "url": "slideshow.html"}
+    {"name": "Gallery", "url": "slideshow.html"},
+    {"name": "Peer Review One", "url": "review1.html"},
+    {"name": "Peer Review Two", "url": "review2.html"}
 ]

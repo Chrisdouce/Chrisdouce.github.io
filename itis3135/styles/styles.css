@@ -67,11 +67,10 @@ figcaption{
 }
 
 nav{
-    font-size: larger;
     border-width: 3px;
     border-radius: 10px;
     border-style: solid;
-    height: 35px;
+    height: 30px;
 }
   
 nav > ul{
@@ -85,7 +84,7 @@ nav > ul{
 
 nav > ul > li {
     display: block;
-    font-size: medium;
+    font-size: 14px;
 }
 
 img{
