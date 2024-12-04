@@ -12,7 +12,6 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    font-size: larger;
 }
 
 header, main, footer{
@@ -20,6 +19,7 @@ header, main, footer{
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
+    font-size: x-large;
     font-family: 'Saira Semi Condensed', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -53,7 +53,6 @@ main{
 
 main p{
     color:var(--paragraph-color);
-    text-align: left;
 }
 
 main ul li{

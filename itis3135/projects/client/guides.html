@@ -8,6 +8,18 @@
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+        main div {
+            display: flex;
+            justify-content: space-between;
+            margin: 0 auto;
+            width: 100%; 
+            max-width: 800px;   
+        }
+        button{
+            color: #4086f7;
+            background-color: #313235;
+            font-size: 30px;
+        }
     </style>
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
@@ -15,9 +27,11 @@
     <div data-include="./components/header.html"></div>
     <main>
         <h2>TEPUS Guides</h2>
-        <button id="previous">&lt;--- Previous </button>
-        <button id="next">Next ----&gt;</button>
         <hr>
+        <div>
+            <button id="previous">&larr;</button>
+            <button id="next"> &rarr;</button>
+        </div>
         <section id="quick">
             <h2>Quick Info</h2>
             <hr>
